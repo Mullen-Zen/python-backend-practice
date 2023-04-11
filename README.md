@@ -1,7 +1,3 @@
-# OK, You've read me. You're off the hook
+# I have no idea what I'm doing
 
-## Go ahead, go do something else now
-
-### Dude you're just being weird at this point go and look at some other file
-
-XD
+Here's a helpful [tutorial](https://code.visualstudio.com/docs/python/tutorial-django) for Django in VSCode.
