@@ -22,6 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-0s_rm5lp7+ayd+ch^eyg(xh5mhiaj9*zm%d*1#z+of#apt2=en'
 
+# FOR PRODUCTION: set DEBUG to False and set ALLOWED_HOSTS to ['*']
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -117,6 +119,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# IN PRODUCTION, add the following line:
+# STATIC_ROOT = BASE_DIR / 'static_collected'
+# Then in the terminal run the following command:
+# python3 manage.py collectstatic
+# In the future run collectstatic any time the static files are changed before deploying into producti
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
