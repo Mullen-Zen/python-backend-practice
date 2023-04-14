@@ -1,14 +1,24 @@
 import re
 from django.http import HttpResponse
-from django.utils.timezone import datetime
 from django.shortcuts import render
 from django.shortcuts import redirect
+from django.utils.timezone import datetime
+from django.views.generic import ListView
 from hello.forms import LogMessageForm
 from hello.models import LogMessage
 
 # Create your views here.
-def home(request):
-    return render(request, "hello/home.html")
+
+# def home(request):
+#     return render(request, "hello/home.html")
+
+class HomeListView(ListView):
+    """Renders the homepage, with a list of all past logs"""
+    model = LogMessage
+
+    def get_context_data(self, **kwargs):
+        context = super(HomeListView, self).get_context_data(**kwargs)
+        return context
 
 def about(request):
     return render(request, "hello/about.html")
@@ -37,3 +47,4 @@ def log_message(request):
             return redirect("home")
     else:
         return render(request, "hello/log_message.html", {"form": form})
+    
