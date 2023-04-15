@@ -60,3 +60,7 @@ python3 manage.py runserver --insecure
 ```
 
 _Note that the addition of --insecure runs the server in "insecure mode," which forces the serving of static files even though the DEBUG is set to false. This has to be done because although the project simulates production, is is, in fact, merely a local development effort. For more information on why this has to be done, visit [this](https://stackoverflow.com/questions/5836674/why-does-debug-false-setting-make-my-django-static-files-access-fail) Stack Overflow thread, and for info about why "insecure mode" is "insecure," visit [this](https://stackoverflow.com/questions/31097333/why-is-serving-static-files-insecure/31097709#31097709) Stack Overflow thread._
+
+## Django Admin Site
+
+Info on modifying the Django admin site can be found [here](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/)
