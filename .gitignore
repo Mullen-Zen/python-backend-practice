@@ -2,3 +2,4 @@
 .vscode/
 .env
 static_collected/
+.superuser.md
