@@ -3,3 +3,5 @@
 .env
 static_collected/
 .superuser.md
+Dockerfile
+.dockerignore
