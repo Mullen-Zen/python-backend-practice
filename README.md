@@ -1,6 +1,11 @@
 # Hello, Django!
 
-This is nothing more than ongoing practice for me to teach myself the workings of a Django-based python backend for a web server, including some light (production/development-level) database stuff. It's based off the code found [here](https://code.visualstudio.com/docs/python/tutorial-django). I'm continuously adding to it as I screw with features. Figured I'd make it public so that people would be able to see what I'm working on :P
+This is nothing more than ongoing practice for me to teach myself the workings of a Django-based python backend for a web server, including some light (production/development-level) database stuff. It's based off the code found [here](https://code.visualstudio.com/docs/python/tutorial-django). I'm continuously adding to it as I screw with features. Figured I'd make it public so that people would be able to see what I'm working on :3
+
+Other referenced tutorials:
+
+- [Django Environment Variables](https://codinggear.blog/django-environment-variables/)
+- [Generating Django Secret Keys](https://codinggear.blog/django-generate-secret-key/)
 
 ## Setup
 
