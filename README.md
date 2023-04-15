@@ -42,3 +42,21 @@ print(get_random_secret_key())
 ```{.py}
 SECRET_KEY=[paste the generated secret key]
 ```
+
+### Collecting Static Files
+
+Because this project is meant to simulate production on a real web server, the static files will need to be collected locally using the following command before running the local server:
+
+```{.sh}
+python3 manage.py collectstatic
+```
+
+## Running the Local Server
+
+To run the local server, use the collowing command:
+
+```{.sh}
+python3 manage.py runserver --insecure
+```
+
+_Note that the addition of --insecure runs the server in "insecure mode," which forces the serving of static files even though the DEBUG is set to false. This has to be done because although the project simulates production, is is, in fact, merely a local development effort. For more information on why this has to be done, visit [this](https://stackoverflow.com/questions/5836674/why-does-debug-false-setting-make-my-django-static-files-access-fail) Stack Overflow thread, and for info about why "insecure mode" is "insecure," visit [this](https://stackoverflow.com/questions/31097333/why-is-serving-static-files-insecure/31097709#31097709) Stack Overflow thread._
