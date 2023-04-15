@@ -122,13 +122,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = 'static_collected/'
 
-# IN PRODUCTION, add the following line:
-# STATIC_ROOT = BASE_DIR / 'static_collected'
-# Then in the terminal run the following command:
-# python3 manage.py collectstatic
+STATIC_ROOT = BASE_DIR / 'static_collected'
 # In the future run collectstatic any time the static files are changed before deploying into producti
+# python3 manage.py collectstatic
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
