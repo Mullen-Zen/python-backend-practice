@@ -7,7 +7,7 @@ Other referenced tutorials:
 - [Django Environment Variables](https://codinggear.blog/django-environment-variables/)
 - [Generating Django Secret Keys](https://codinggear.blog/django-generate-secret-key/)
 
-## Setup (requires python3 to be installed)
+## Setup (requires Python3)
 
 ### Installing Dependencies
 
