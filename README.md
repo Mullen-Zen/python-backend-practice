@@ -11,7 +11,7 @@ Other referenced tutorials:
 
 ### Installing Dependencies
 
-- First you'll need to install the required libraries - do so by running the following command:
+First you'll need to install the required libraries - do so by running the following command:
 
 ``` {.sh}
 pip install -r requirements.txt
